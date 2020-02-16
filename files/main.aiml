@@ -2,8 +2,240 @@
 <aiml version="2.0">
 
 <category>
-  <pattern>Hi</pattern>
-  <template>Hello world!</template>
+  <pattern>*</pattern>
+  <template>I have no answer for that. <br></br><br></br>
+  Try asking about "available jobs" or "strengths".
+        <reply>
+            <text>Available Jobs</text>
+            <postback>Available Jobs</postback>
+        </reply>
+        <reply>
+            <text>Strengths</text>
+            <postback>Strengths</postback>
+        </reply>
+    </template>
+</category>
+
+<!-- Greeting -->
+<category>
+    <pattern><set>greeting</set></pattern>
+    <template>Welcome to the Computer Science Career Bot! I can assist you with 
+    looking for a suitable career.<br/><br/>
+    To get started, ask me about "available jobs" or how to pick a job by looking 
+    at your "strengths"!
+        <reply>
+            <text>Available Jobs</text>
+            <postback>Available Jobs</postback>
+        </reply>
+        <reply>
+            <text>Strengths</text>
+            <postback>Strengths</postback>
+        </reply>
+    </template>
+</category>
+
+<!-- Available Jobs -->
+<category>
+    <pattern>Available Jobs</pattern>
+    <template>There are many career options available for Computer Science students.
+    <br/>
+    <br/>
+    Please select any of the options below:<br/>
+    <reply>
+        <text>Web Developer</text>
+        <postback></postback>
+    </reply>
+    <reply>
+        <text>UX Designer</text>
+        <postback></postback>
+    </reply>
+    <reply>
+        <text>Software Engineer</text>
+        <postback></postback>
+    </reply>
+    <reply>
+        <text>Business Analyst</text>
+        <postback></postback>
+    </reply>
+    <reply>
+        <text>Help Desk Technician</text>
+        <postback></postback>
+    </reply>
+    <reply>
+        <text>Information Security Analyst</text>
+        <postback></postback>
+    </reply>
+    </template>
+</category>
+
+<!-- Job Descriptions -->
+<category>
+    <pattern>Web Developer</pattern>
+    <template>
+        Web Developers are responsible for designing, coding and modifying websites,
+        from layout to function and according to a client's specifications. They 
+        strive to create visually appealing sites that feature user-friendly design 
+        and clear navigation.
+        <br></br><br></br>
+        Median Salary: <br></br>
+        The median annual wage for web developers was $69,430 in May 2018.
+        <br></br><br></br>
+        Job Outlook, 2018-2028: <br></br>
+        13% (Much faster than average)
+    </template>
+</category>
+
+<category>
+    <pattern>UX Designer</pattern>
+    <template>
+        UX designers focus their attention on how people respond to and interact 
+        with technology, so you better believe they need to work with people. 
+        Whether itâs interviewing people, conducting focus groups or other user testing,
+        itâs all about people. If you consider yourself to be an empathetic, 
+        intuitive person who has the ability to read people, UX design might be 
+        right up your alley.
+        <br></br><br></br>
+        Median Salary: <br></br>
+        The median annual wage for UX Designers was $85,277 in May 2018.
+        <br></br><br></br>
+        Job Outlook, 2018-2028: <br></br>
+        14% (Much faster than average)
+    </template>
+</category>
+
+<category>
+    <pattern>Software Engineer</pattern>
+    <template>
+        Software Engineers spend nearly all of their time involved with code in 
+        some way. Whether it's working on a new feature, or attending a sprint 
+        planning meeting to pick out your team's work for the next few weeks, 
+        nearly everything you do will have a code focus. 
+        <br></br><br></br>
+        Median Salary: <br></br>
+        The median annual wage for UX Designers was $103,620 in May 2018.
+        <br></br><br></br>
+        Job Outlook, 2018-2028: <br></br>
+        21% (Much faster than average)
+    </template>
+</category>
+
+<category>
+    <pattern>Help Desk Technician</pattern>
+    <template>
+        Help Desk Technicians enjoy helping other people and are great listeners. 
+        If youâve ever had a problem with a computer software or program, youâve 
+        likely had a Help Desk Technician come to your rescue. Whether working 
+        internally or externally, these individuals spend much of 
+        their days interacting with others to help them solve problems.
+        <br></br><br></br>
+        Median Salary: <br></br>
+        The median annual wage for web developers was $50,980 in May 2018.
+        <br></br><br></br>
+        Job Outlook, 2018-2028: <br></br>
+        10% (Faster than average)
+    </template>
+</category>
+
+<category>
+    <pattern>Information Security Analyst</pattern>
+    <template>
+        Information Security Analysts are the gatekeepers or security guards of 
+        information systems. To explain it another way: These professionals plan
+        and execute security measures to shield an organization's computer systems 
+        and networks from infiltration and cyberattacks.
+        <br></br><br></br>
+        Median Salary: <br></br>
+        The median annual wage for web developers was $98,350 in May 2018.
+        <br></br><br></br>
+        Job Outlook, 2018-2028: <br></br>
+        32% (Much faster than average)
+    </template>
+</category>
+
+<category>
+    <pattern>Business Analyst</pattern>
+    <template>
+        Business Analysts spend much of their time thinking about projects from 
+        the perspectives of both the users and the team writing the code in order 
+        to create the best set of functional requirements they can. They also 
+        often have to deal with customers or internal development teams. 
+        <br></br><br></br>
+        Median Salary: <br></br>
+        The median annual wage for web developers was $88,740 in May 2018.
+        <br></br><br></br>
+        Job Outlook, 2018-2028: <br></br>
+        9% (Faster than average)
+    </template>
+</category>
+
+<!-- Strengths -->
+<category>
+    <pattern>STRENGTHS</pattern>
+    <template>
+        Would you say you're more of a people person, code jockey, or analyst?
+    </template>
+</category>
+
+<category>
+    <pattern>PEOPLE PERSON</pattern>
+    <template>
+        UX designers focus their attention on how people respond to and interact 
+        with technology, so you better believe they need to work with people. 
+        Whether itâs interviewing people, conducting focus groups or other user testing,
+        itâs all about people. If you consider yourself to be an empathetic, 
+        intuitive person who has the ability to read people, UX design might be 
+        right up your alley.
+        <br></br><br></br>
+        Help Desk Technicians enjoy helping other people and are great listeners. 
+        If youâve ever had a problem with a computer software or program, youâve 
+        likely had a Help Desk Technician come to your rescue. Whether working 
+        internally or externally, these individuals spend much of 
+        their days interacting with others to help them solve problems.
+        <br></br><br></br>
+        Ask me more about either UX Designer or Help Desk Technician, 
+        or say strengths to go back and choose again.
+    </template>
+</category>
+
+<category>
+    <pattern>CODE JOCKEY</pattern>
+    <template>
+        Software Engineers spend nearly all of their time involved with code in 
+        some way. Whether it's working on a new feature, or attending a sprint 
+        planning meeting to pick out your team's work for the next few weeks, 
+        nearly everything you do will have a code focus. 
+        <br></br><br></br>
+        Web Developers are responsible for designing, coding and modifying websites,
+        from layout to function and according to a client's specifications. They 
+        strive to create visually appealing sites that feature user-friendly design 
+        and clear navigation.
+        <br></br><br></br>
+        Ask me more about either Software Engineer or Web Developer, or say strengths 
+        to go back and choose again.
+    </template>
+</category>
+
+<category>
+    <pattern>ANALYST</pattern>
+    <template>
+        Business Analysts spend much of their time thinking about projects from 
+        the perspectives of both the users and the team writing the code in order 
+        to create the best set of functional requirements they can. They also 
+        often have to deal with customers or internal development teams. 
+        <br></br><br></br>
+        Information Security Analysts are the gatekeepers or security guards of 
+        information systems. To explain it another way: These professionals plan
+        and execute security measures to shield an organization's computer systems 
+        and networks from infiltration and cyberattacks.
+        <br></br><br></br>
+        Ask me more about either Business Analyst or Information Security Analyst, 
+        or say strengths to go back and choose again.
+    </template>
+</category>
+
+<category>
+    <pattern><set>exit</set></pattern>
+    <template>Thanks for using the WGU Career Bot! Goodbye.</template>
 </category>
 
 </aiml>
